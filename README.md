@@ -2,6 +2,8 @@
 
 코딩 없이 랜딩페이지를 만들고, 편집하고, 브라우저에 보관하는 로컬 웹 스튜디오.
 
+실행 코드는 `feature/ils-studio-v1.1` 브랜치에 있습니다. `main`은 초기 설계 문서 기준입니다. GitHub에서 복제한 경우 먼저 `git switch feature/ils-studio-v1.1`로 전환하세요.
+
 ## 실행
 
 Node.js 22 이상을 권장합니다.
