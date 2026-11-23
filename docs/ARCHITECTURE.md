@@ -18,7 +18,7 @@
 Project: schemaVersion=1, UUID, name, createdAt, updatedAt, page, theme, assets, dataBindings.
 Page: title, description, sections.
 Section: id, type, label, content, design, motion, interaction, accessibility.
-Theme: styleId, paletteId, mode, overrides, headingFont, bodyFont, maxWidth, motionPreset, gradient.
+Theme: styleId, paletteId, mode, overrides, headingFont, bodyFont, maxWidth, motionPreset, gradient. headingFont와 Section.design.radius의 null은 스타일 기본값을 따르며 명시 값은 사용자 오버라이드로 우선한다. 스타일 변경은 콘텐츠·팔레트·오버라이드를 보존한다.
 
 타입은 등록된 32개 enum에 제한한다. 콘텐츠는 일반 문자열로 React에 렌더링한다. HTML 삽입이나 eval을 사용하지 않는다. 링크는 HTTP(S), mailto, tel, 페이지 anchor만 허용한다. 임의 확장 속성을 strict 스키마로 거부한다. 지원하지 않는 schemaVersion은 거부한다. 마이그레이션이 필요한 차기 버전은 parseProject 앞에 별도 버전 라우터를 추가한다.
 
