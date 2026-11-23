@@ -13,4 +13,4 @@
 | Vitest + fake-indexeddb + Testing Library + jsdom | 데이터 검증, 트랜잭션 오류, 실제 React 편집 흐름 검증                                                                           |
 | Playwright                                        | 실제 브라우저 E2E 사양. 현재 환경의 포트 제한으로 미실행                                                                        |
 
-GSAP, Three.js, R3F, 외부 DB, AI SDK는 해당 기능이 필요해지는 단계에서 도입한다. 설치 초기 npm 10의 optional peer 해결 중 오류가 발생해 legacy peer 설치로 복구한 뒤 lockfile을 생성했다. 이후 일반 package-lock-only 설치가 성공했다. 기본 Turbopack은 이 실행 환경의 내부 포트 제한과 충돌해 build 스크립트는 Next에서 지원하는 webpack 옵션을 사용한다.
+GSAP, Three.js, R3F, 외부 DB, AI SDK는 해당 기능이 필요해지는 단계에서 도입한다. 설치 초기 optional peer 해결 오류를 확인했다. 최종 점검에서 jest-dom 8이 Vitest 5를 요구하는 충돌을 찾아 jest-dom 6.9.1로 맞췄으며, 이후 일반 npm install이 성공했다. legacy peer 옵션 없이 설치 가능한 조합과 lockfile을 제공한다. 기본 Turbopack은 이 실행 환경의 내부 포트 제한과 충돌해 build 스크립트는 Next에서 지원하는 webpack 옵션을 사용한다.
